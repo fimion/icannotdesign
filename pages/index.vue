@@ -6,6 +6,13 @@
          height="36"
          width="343"
          alt="This site is under eternal construction.">
+    <div>
+      <img src="/constjackhammer_e0.gif" alt="An animated construction worker operating a jackhammer.">
+      <img src="/anim0206-1_e0.gif" alt="A cartoon construction worker eating alternating between eating a sandwich and drinking water.">
+      <img src="/constjackhammer_e0.gif" alt="An animated construction worker operating a jackhammer.">
+      <img src="/anim0206-1_e0.gif" alt="A cartoon construction worker eating alternating between eating a sandwich and drinking water.">
+      <img src="/constjackhammer_e0.gif" alt="An animated construction worker operating a jackhammer.">
+    </div>
 
   </div>
 </template>
@@ -25,8 +32,5 @@ body {
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
-}
-.title{
-  color: white;
 }
 </style>
