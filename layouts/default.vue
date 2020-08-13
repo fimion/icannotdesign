@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Nuxt />
+    <nuxt />
   </div>
 </template>
 
@@ -24,39 +24,23 @@ html {
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lacquer', cursive;
+  font-weight: 400;
+}
+
+hr{
+  width: 546px;
+  border: none;
+  border-top: 30px solid;
+  border-image-source: url("/anismilebar.gif");
+  background: url("/anismilebar.gif") center top;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
 }
 </style>

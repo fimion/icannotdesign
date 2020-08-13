@@ -1,29 +1,12 @@
 <template>
-  <div class="container">
-    <div>
-      <nuxt-logo />
-      <h1 class="title">
-        icannotdesign
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+  <div class="main">
+    <h1 class="title">I Cannot Design.</h1>
+    <hr>
+    <img src="/construction.gif"
+         height="36"
+         width="343"
+         alt="This site is under eternal construction.">
+
   </div>
 </template>
 
@@ -32,42 +15,18 @@ export default {}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
+body {
+  background-image: url("/Bglightning.gif");
+}
+
+.main {
+  min-height: 102vh;
   display: flex;
-  justify-content: center;
+  flex-flow: column nowrap;
+  justify-content: space-around;
   align-items: center;
-  text-align: center;
 }
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.title{
+  color: white;
 }
 </style>
