@@ -38,9 +38,14 @@ export default {
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: 'https://icannot.design' },
       { property: 'og:image', content: 'https://icannot.design/opengraph.png' },
-      { property: 'og:image:height', content: '572' },
-      { property: 'og:image:width', content: '1117' },
       { property: 'og:image:alt', content: 'a picture that is a supposed capture of the site, but is off center and cutting off information. Extremely unuseful.' },
+      { name:'twitter:card', content:'summary_large_image'},
+      { name:'twitter:site', content:'icannot.design?'},
+      { name:'twitter:creator', content:'fimion'},
+      { name:'twitter:title', content:'I CANNOT DESIGN'},
+      { name:'twitter:description', content:'I THINK i have IT NOW, OOPS, HOLD ON'},
+      { name:'twitter:image', content: 'https://icannot.design/opengraph.png' },
+      { name:'twitter:image:alt', content: 'a picture that is a supposed capture of the site, but is off center and cutting off information. Extremely unuseful.' },
     ]
   }
 }
