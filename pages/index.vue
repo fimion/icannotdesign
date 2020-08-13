@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
+      <nuxt-logo />
       <h1 class="title">
         icannotdesign
       </h1>
