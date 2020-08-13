@@ -2,7 +2,7 @@
   <div class="main">
     <h1 class="title">I Cannot Design.</h1>
     <hr>
-    <marquee direction="down" width="250" height="200" behavior="alternate">
+    <marquee direction="down" width="350" height="200" behavior="alternate">
       <marquee behavior="alternate">
         Under construction!!!1!1one
       </marquee>
