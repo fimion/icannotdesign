@@ -18,9 +18,11 @@
 
     <div>
       <img src="/constjackhammer_e0.gif" alt="An animated construction worker operating a jackhammer.">
-      <img src="/anim0206-1_e0.gif" alt="A cartoon construction worker eating alternating between eating a sandwich and drinking water.">
+      <img src="/anim0206-1_e0.gif"
+           alt="A cartoon construction worker eating alternating between eating a sandwich and drinking water.">
       <img src="/constjackhammer_e0.gif" alt="An animated construction worker operating a jackhammer.">
-      <img src="/anim0206-1_e0.gif" alt="A cartoon construction worker eating alternating between eating a sandwich and drinking water.">
+      <img src="/anim0206-1_e0.gif"
+           alt="A cartoon construction worker eating alternating between eating a sandwich and drinking water.">
       <img src="/constjackhammer_e0.gif" alt="An animated construction worker operating a jackhammer.">
     </div>
 
@@ -28,7 +30,20 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head: {
+    meta: [
+      { property: 'og:title', content: 'I CANNOT DESIGN' },
+      { property: 'og:description', content: 'I THINK i have IT NOW, OOPS, HOLD ON' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://icannot.design' },
+      { property: 'og:image', content: 'https://icannot.design/opengraph.png' },
+      { property: 'og:image:height', content: '572' },
+      { property: 'og:image:width', content: '1117' },
+      { property: 'og:image:alt', content: 'a picture that is a supposed capture of the site, but is off center and cutting off information. Extremely unuseful.' },
+    ]
+  }
+}
 </script>
 
 <style>
