@@ -15,6 +15,7 @@
          height="180"
          width="158"
          alt="Still under construction">
+
     <div>
       <img src="/constjackhammer_e0.gif" alt="An animated construction worker operating a jackhammer.">
       <img src="/anim0206-1_e0.gif" alt="A cartoon construction worker eating alternating between eating a sandwich and drinking water.">
@@ -22,6 +23,7 @@
       <img src="/anim0206-1_e0.gif" alt="A cartoon construction worker eating alternating between eating a sandwich and drinking water.">
       <img src="/constjackhammer_e0.gif" alt="An animated construction worker operating a jackhammer.">
     </div>
+
   </div>
 </template>
 
