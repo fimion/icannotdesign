@@ -43,4 +43,11 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
+marquee marquee {
+  background-color: magenta;
+  color: white;
+  line-height: 1.2;
+  font-family: comic-sans, sans-serif;
+}
 </style>
