@@ -1,5 +1,6 @@
 <template>
   <div>
+    <github-link />
     <nuxt />
   </div>
 </template>
@@ -24,21 +25,6 @@ html {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lacquer', cursive;
-  font-weight: 400;
-  color: magenta;
-  background-color: darkslateblue;
-}
-
-hr{
-  width: 546px;
-  border: none;
-  border-top: 30px solid;
-  border-image-source: url("/anismilebar.gif");
-  background: url("/anismilebar.gif") center top;
-}
-
 *,
 *::before,
 *::after {
@@ -46,3 +32,9 @@ hr{
   margin: 0;
 }
 </style>
+<script>
+import GithubLink from '~/components/GithubLink.vue'
+export default {
+  components: { GithubLink }
+}
+</script>
