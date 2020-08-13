@@ -48,6 +48,6 @@ marquee marquee {
   background-color: magenta;
   color: white;
   line-height: 1.2;
-  font-family: "Comic Sans", sans-serif;
+  font-family: "Comic Sans", "Comic Sans MS", sans-serif;
 }
 </style>
