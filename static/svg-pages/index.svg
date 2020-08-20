@@ -8,7 +8,7 @@
         <p>
           it should route based on the hash.
         </p>
-        <a href="/svg-router#test">Change this.</a>
+        <a href="/svg-router/#test">Change this.</a>
       </div>
     </foreignObject>
   </symbol>
