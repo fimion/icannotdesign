@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <symbol id="default" viewBox="0 0 200 200">
+    <foreignObject x="0" y="0" height="200" width="200" fill="black">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>
+          This page renders a symbol from an external svg.
+        </p>
+        <p>
+          it should route based on the hash.
+        </p>
+        <a href="/svg-router#test">Change this.</a>
+      </div>
+    </foreignObject>
+  </symbol>
+  <use href="#default" />
+</svg>
