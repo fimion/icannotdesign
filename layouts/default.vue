@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <h1 class="title">I Cannot Design.</h1>
+    <h1 class="title"><nuxt-link to="/">I Cannot Design.</nuxt-link></h1>
     <github-link />
     <nuxt />
   </div>
