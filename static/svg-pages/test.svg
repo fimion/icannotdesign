@@ -3,7 +3,7 @@
     <foreignObject x="0" y="0" height="200" width="200" fill="black">
       <div xmlns="http://www.w3.org/1999/xhtml">
         <p>Page 2</p>
-        <a href="/svg-router">Change this.</a>
+        <a href="/svg-router/#index">Change this.</a>
       </div>
     </foreignObject>
   </symbol>

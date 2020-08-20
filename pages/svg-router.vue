@@ -13,28 +13,51 @@ export default {
     return {
       height: 100,
       width: 100,
+      hash: 'index',
     };
   },
   computed:{
     myRoute(){
-      const hash = this.$route.hash.slice(1) || 'index';
+      const hash = this.hash;
       return `/svg-pages/${hash}.svg#default`;
     },
     myViewBox(){
-      return `0 0 ${this.width} ${this.height}`;
+      const height = this.height;
+      const width = this.width;
+      return `0 0 ${width} ${height}`;
+    }
+  },
+  methods:{
+    setHashValue(route){
+      this.$nextTick(()=>{
+        this.hash = route.hash.slice(1) || 'index';
+      })
+    },
+    setWindowSize(){
+      this.height = window.innerHeight;
+      this.width = window.innerWidth;
     }
   },
   mounted(){
     if(process.client){
-      this.height = window.innerHeight;
-      this.width = window.innerWidth;
-      window.addEventListener('resize', ()=>{
-        this.height = window.innerHeight;
-        this.width = window.innerWidth;
-      })
+      this.setWindowSize();
+      window.addEventListener('resize', this.setWindowSize);
+      this.setHashValue(this.$route);
     }
-
-  }
+  },
+  watch:{
+    '$route':{
+      deep: true,
+      immediate: true,
+      handler(newVal, oldVal){
+        console.log(newVal, oldVal);
+        const oldHash = oldVal ? oldVal.hash : '';
+        if(newVal && (newVal.hash !== oldHash)){
+          this.setHashValue(newVal);
+        }
+      }
+    }
+  },
 }
 </script>
 
