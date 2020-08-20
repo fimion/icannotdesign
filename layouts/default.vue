@@ -1,9 +1,18 @@
 <template>
-  <div>
+  <div class="layout">
+    <h1 class="title">I Cannot Design.</h1>
     <github-link />
     <nuxt />
   </div>
 </template>
+
+<script>
+import GithubLink from '~/components/GithubLink.vue';
+export default {
+  name: 'DefaultLayout',
+  components: {GithubLink},
+}
+</script>
 
 <style>
 html {
@@ -30,11 +39,6 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 </style>
-<script>
-import GithubLink from '~/components/GithubLink.vue'
-export default {
-  components: { GithubLink }
-}
-</script>
