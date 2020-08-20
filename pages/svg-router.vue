@@ -9,6 +9,7 @@
 <script>
 export default {
   name: 'svg-router',
+  layout: 'handrawn',
   data(){
     return {
       height: 100,
