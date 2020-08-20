@@ -18,7 +18,7 @@ export default {
   computed:{
     myRoute(){
       const hash = this.$route.hash.slice(1) || 'index';
-      return `svg-pages/${hash}.svg#default`;
+      return `/svg-pages/${hash}.svg#default`;
     },
     myViewBox(){
       return `0 0 ${this.width} ${this.height}`;
