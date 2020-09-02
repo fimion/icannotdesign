@@ -1,11 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+
   <symbol id="default" viewBox="0 0 200 200">
     <text y="12" style="text-decoration:underline;"><a href="/svg-router/#test">Go to "Page" 2.</a></text>
-    <text y="37">This page renders a</text>
-    <text y="62">symbol from an external</text>
-    <text y="87">svg.</text>
-    <text y="112">it should route based on</text>
-    <text y="137">the hash.</text>
+    <text y="37" dy="0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0">This page renders a</text>
+    <text y="62" dy="0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0">symbol from an external</text>
+    <text y="87" dy="0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0">svg.</text>
+    <text y="112" dy="0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0">it should route based on</text>
+    <text y="137" dy="0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0">the hash.</text>
     <foreignObject x="0" y="150" height="50" width="200" fill="black">
       <div xmlns="http://www.w3.org/1999/xhtml" style="background-color: white;">
         <p>This part only shows in Firefox.</p>
