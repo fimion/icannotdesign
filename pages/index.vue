@@ -41,18 +41,10 @@ export default {
   layout:'purple',
   head: {
     meta: [
-      { property: 'og:title', content: 'I CANNOT DESIGN' },
-      { property: 'og:description', content: 'I THINK i have IT NOW, OOPS, HOLD ON' },
-      { property: 'og:type', content: 'website' },
       { property: 'og:url', content: 'https://icannot.design' },
-      { property: 'og:image', content: 'https://icannot.design/opengraph.png' },
+      { property: 'og:image', content: 'https://icannot.design/page-preview/index.png' },
       { property: 'og:image:alt', content: 'a picture that is a supposed capture of the site, but is off center and cutting off information. Extremely unuseful.' },
-      { name:'twitter:card', content:'summary_large_image'},
-      { name:'twitter:site', content:'icannot.design?'},
-      { name:'twitter:creator', content:'fimion'},
-      { name:'twitter:title', content:'I CANNOT DESIGN'},
-      { name:'twitter:description', content:'I THINK i have IT NOW, OOPS, HOLD ON'},
-      { name:'twitter:image', content: 'https://icannot.design/opengraph.png' },
+      { name:'twitter:image', content: 'https://icannot.design/page-preview/index.png' },
       { name:'twitter:image:alt', content: 'a picture that is a supposed capture of the site, but is off center and cutting off information. Extremely unuseful.' },
     ],
   }
