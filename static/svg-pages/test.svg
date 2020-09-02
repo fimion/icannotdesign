@@ -1,10 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg">
   <symbol id="default" viewBox="0 0 200 200">
-    <foreignObject x="0" y="0" height="200" width="200" fill="black">
-      <div xmlns="http://www.w3.org/1999/xhtml">
-        <p>Page 2</p>
-        <a href="/svg-router/#index">Change this.</a>
-      </div>
-    </foreignObject>
+    <text y="12" style="text-decoration:underline;"><a href="/svg-router/#index">Go to "Page" 1.</a></text>
+    <text y="37">Page 2</text>
   </symbol>
 </svg>
