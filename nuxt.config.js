@@ -20,6 +20,15 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { property: 'og:title', content: 'I CANNOT DESIGN' },
+      { property: 'og:description', content: 'I THINK i have IT NOW, OOPS, HOLD ON' },
+      { property: 'og:type', content: 'website' },
+
+      { name:'twitter:card', content:'summary_large_image'},
+      { name:'twitter:site', content:'icannot.design?'},
+      { name:'twitter:creator', content:'fimion'},
+      { name:'twitter:title', content:'I CANNOT DESIGN'},
+      { name:'twitter:description', content:'I THINK i have IT NOW, OOPS, HOLD ON'},
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

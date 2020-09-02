@@ -10,6 +10,15 @@
 export default {
   name: 'svg-router',
   layout: 'handrawn',
+  head:{
+    meta:[
+      { property: 'og:url', content: 'https://icannot.design/svg-router/' },
+      { property: 'og:image', content: 'https://icannot.design/page-preview/svg-router.png' },
+      { property: 'og:image:alt', content: 'a picture that is a supposed capture of the site, but is off center and cutting off information. Extremely unuseful.' },
+      { name:'twitter:image', content: 'https://icannot.design/page-preview/svg-router.png' },
+      { name:'twitter:image:alt', content: 'a picture that is a supposed capture of the site, but is off center and cutting off information. Extremely unuseful.' },
+    ],
+  },
   data(){
     return {
       height: 100,
