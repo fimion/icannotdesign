@@ -1,0 +1,77 @@
+---
+import DefaultLayout, {Props} from './DefaultLayout.astro';
+export type Props = Props;
+
+---
+
+<DefaultLayout {...Astro.props}>
+
+  <template slot="head">
+    <slot name="head"></slot>
+  </template>
+
+  <slot/>
+
+
+</DefaultLayout>
+<style is:global>
+  @import url("https://fonts.googleapis.com/css2?family=Lacquer&display=swap");
+  h1.title{
+    text-align: center;
+}
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lacquer', cursive;
+  font-weight: 400;
+  color: magenta;
+  text-shadow: 0 0 10px turquoise;
+}
+
+  :is(h1,h2,h3,h4,h5,h6) a:is(:scope,:hove,:focus,:visited)
+  {
+    color: inherit;
+  }
+
+  a, a:hover, a:focus, a:visited {
+  color: forestgreen;
+  text-shadow: 0 0 5px darkorchid;
+}
+
+
+  hr {
+  width: 546px;
+  border: none;
+  border-top: 30px solid;
+  border-image-source: url("/anismilebar.gif");
+  background: url("/anismilebar.gif") center top;
+}
+
+  .layout {
+    background-image: url("/Bglightning.gif");
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 20px;
+}
+
+  .main {
+    min-height: 102vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+  a.github-link {
+  left: 0;
+  right: unset;
+}
+
+  .octo-arm, .octo-body {
+  fill: teal;
+}
+
+  .octo-bg {
+  fill: hotpink;
+  stroke: teal;
+  stroke-width: 10;
+}
+</style>

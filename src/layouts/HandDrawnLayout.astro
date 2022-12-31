@@ -1,0 +1,11 @@
+---
+import DefaultLayout, {Props} from './DefaultLayout.astro';
+export type Props = Props;
+
+import "../styles/handdrawn.css";
+---
+
+<DefaultLayout {...Astro.props}>
+  <template slot="head"><slot name="head"></slot></template>
+  <slot />
+</DefaultLayout>

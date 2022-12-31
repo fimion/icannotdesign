@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/PurpleLayout.astro';
+
+const link = [
+]
+const meta = [
+{ property: 'og:url', content: 'https://icannot.design' },
+{ property: 'og:image', content: 'https://icannot.design/page-previews/index.jpg' },
+{ property: 'og:image:alt', content: 'a picture that is a supposed capture of the site, but is off center and cutting off information. Extremely unuseful.' },
+{ name:'twitter:image', content: 'https://icannot.design/page-previews/index.jpg' },
+{ name:'twitter:image:alt', content: 'a picture that is a supposed capture of the site, but is off center and cutting off information. Extremely unuseful.' },
+]
+---
+
+<Layout title="I Cannot Design?" meta={meta} link={link}>
+  <div class="main">
+    <hr>
+      <div>
+        <h2>LINKS</h2>
+        <ul>
+          <li>
+            <a href="/svg-router">SVG ROUTER?</a>
+          </li>
+        </ul>
+      </div>
+      <marquee direction="down" width="350" height="200" behavior="alternate">
+        <marquee behavior="alternate">
+          Under construction!!!1!1one
+        </marquee>
+      </marquee>
+      <img src="/construction.gif"
+           height="36"
+           width="343"
+           alt="This site is under eternal construction.">
+        <img src="/underconstruction.gif"
+             height="180"
+             width="158"
+             alt="Still under construction">
+
+          <div>
+            <img src="/constjackhammer_e0.gif" alt="An animated construction worker operating a jackhammer.">
+              <img src="/anim0206-1_e0.gif"
+                   alt="A cartoon construction worker eating alternating between eating a sandwich and drinking water.">
+                <img src="/constjackhammer_e0.gif" alt="An animated construction worker operating a jackhammer.">
+                  <img src="/anim0206-1_e0.gif"
+                       alt="A cartoon construction worker eating alternating between eating a sandwich and drinking water.">
+                    <img src="/constjackhammer_e0.gif" alt="An animated construction worker operating a jackhammer.">
+          </div>
+
+  </div>
+</Layout>
+
+<style scoped>
+  marquee marquee {
+    background-color: magenta;
+  color: white;
+  line-height: 1.2;
+  font-family: "Comic Sans", "Comic Sans MS", sans-serif;
+}
+</style>

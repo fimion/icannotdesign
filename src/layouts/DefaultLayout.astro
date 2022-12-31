@@ -1,0 +1,91 @@
+---
+
+export type tagObject = {
+  [key:string]: string;
+};
+
+export interface Props {
+	title: string;
+  meta: tagObject[];
+  link: tagObject[];
+};
+import GithubLink from "../components/GithubLink.vue"
+import {SITE_DESCRIPTION} from '../const.ts';
+
+const { title, meta=[], link=[] } = Astro.props;
+
+const displayMeta:tagObject[] = [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: "generator", content: Astro.generator },
+      { hid: 'description', name: 'description', content: SITE_DESCRIPTION },
+      { property: 'og:title', content: 'I CANNOT DESIGN' },
+      { property: 'og:description', content: 'I THINK i have IT NOW, OOPS, HOLD ON' },
+      { property: 'og:type', content: 'website' },
+      { name:'twitter:card', content:'summary_large_image'},
+      { name:'twitter:site', content:'icannot.design?'},
+      { name:'twitter:creator', content:'fimion'},
+      { name:'twitter:title', content:'I CANNOT DESIGN'},
+      { name:'twitter:description', content:'I THINK i have IT NOW, OOPS, HOLD ON'},
+      ...meta,
+]
+
+const displayLink:tagObject[] = [
+  { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+  ...link,
+]
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    {displayMeta.map(e=>(<meta {...e} />))}
+    {displayLink.map(e=>(<link {...e} />))}
+		<title>{title}</title>
+    <slot name="head"></slot>
+	</head>
+	<body>
+  <div class="layout">
+    <h1 class="title"><a href="/">I Cannot Design.</a></h1>
+    <GithubLink />
+    <slot />
+  </div>
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+	}
+  html {
+    font-family:
+  'Source Sans Pro',
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  Roboto,
+  'Helvetica Neue',
+  Arial,
+  sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+	code {
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+</style>

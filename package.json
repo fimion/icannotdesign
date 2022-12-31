@@ -1,27 +1,19 @@
 {
   "name": "icannotdesign",
-  "description": "THIS LOOKS GOOD, RIGHT?",
-  "version": "1.0.0",
+  "type": "module",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "test": "jest"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "nuxt": "^2.14.0"
-  },
-  "devDependencies": {
-    "@nuxt/types": "^2.14.1",
-    "@vue/test-utils": "^1.0.3",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "^26.1.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "jest": "^26.1.0",
-    "prettier": "^2.0.5",
-    "vue-jest": "^3.0.4"
+    "@astrojs/sitemap": "^1.0.0",
+    "@astrojs/vue": "^1.2.2",
+    "astro": "^1.8.0",
+    "vue": "^3.2.45"
   }
 }
