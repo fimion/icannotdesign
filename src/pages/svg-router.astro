@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/HandDrawnLayout.astro';
+import SvgRouter from "../components/svg-router.vue"
+const link = [
+]
+const meta = [
+{ property: 'og:url', content: 'https://icannot.design/svg-router/' },
+{ property: 'og:image', content: 'https://icannot.design/page-previews/svg-router.jpg' },
+{ property: 'og:image:alt', content: 'a picture that is a supposed capture of the site, but is off center and cutting off information. Extremely unuseful.' },
+{ name:'twitter:image', content: 'https://icannot.design/page-previews/svg-router.jpg' },
+{ name:'twitter:image:alt', content: 'a picture that is a supposed capture of the site, but is off center and cutting off information. Extremely unuseful.' },
+]
+---
+
+<Layout title="I Cannot Design - SVG Router" meta={meta} link={link}>
+  <SvgRouter client:only="vue"></SvgRouter>
+</Layout>
